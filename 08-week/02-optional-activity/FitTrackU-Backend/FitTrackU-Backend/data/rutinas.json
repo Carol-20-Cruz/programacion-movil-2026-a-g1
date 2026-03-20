@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "nombre": "Rutina Pecho y Tríceps",
+    "dia": "Lunes",
+    "ejercicios": [
+      "Press de banca",
+      "Fondos en paralelas",
+      "Extensiones de tríceps",
+      "Aperturas con mancuernas"
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Rutina Pierna",
+    "dia": "Miércoles",
+    "ejercicios": [
+      "Sentadillas",
+      "Prensa de pierna",
+      "Extensiones de cuádriceps",
+      "Curl de femoral",
+      "Pantorrillas"
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "Rutina Espalda y Bíceps",
+    "dia": "Viernes",
+    "ejercicios": [
+      "Dominadas",
+      "Remo con barra",
+      "Jalón al pecho",
+      "Curl de bíceps"
+    ]
+  }
+]
