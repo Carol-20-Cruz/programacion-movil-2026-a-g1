@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1A1A2E">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mis Rutinas"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#E94560"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenida, Carol"
+            android:textSize="14sp"
+            android:textColor="#AAAAAA"/>
+    </LinearLayout>
+
+    <!-- BUSCADOR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="12dp">
+
+        <EditText
+            android:id="@+id/etBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Buscar rutina..."
+            android:textColorHint="#555555"
+            android:textColor="#FFFFFF"
+            android:background="#0F3460"
+            android:padding="14dp"
+            android:inputType="text"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <!-- CHIPS DE FILTRO -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/chipTodos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Todos"
+                android:textColor="#FFFFFF"
+                android:background="#E94560"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/chipLunes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lunes"
+                android:textColor="#AAAAAA"
+                android:background="#16213E"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/chipMiercoles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Miércoles"
+                android:textColor="#AAAAAA"
+                android:background="#16213E"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/chipViernes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Viernes"
+                android:textColor="#AAAAAA"
+                android:background="#16213E"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- LISTA DE RUTINAS -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp">
+
+        <LinearLayout
+            android:id="@+id/listaRutinas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="4dp"
+            android:paddingBottom="8dp">
+
+            <!-- Card 1 -->
+            <LinearLayout
+                android:id="@+id/cardPecho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#16213E"
+                android:padding="20dp"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rutina Pecho y Tríceps"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4 ejercicios  •  Lunes"
+                    android:textColor="#AAAAAA"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <!-- Card 2 -->
+            <LinearLayout
+                android:id="@+id/cardPierna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#16213E"
+                android:padding="20dp"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rutina Pierna"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 ejercicios  •  Miércoles"
+                    android:textColor="#AAAAAA"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <!-- Card 3 -->
+            <LinearLayout
+                android:id="@+id/cardEspalda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#16213E"
+                android:padding="20dp"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rutina Espalda y Bíceps"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4 ejercicios  •  Viernes"
+                    android:textColor="#AAAAAA"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <!-- ESTADO VACÍO -->
+            <LinearLayout
+                android:id="@+id/estadoVacio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="48dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sin rutinas"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toca + Nueva Rutina para comenzar"
+                    android:textColor="#AAAAAA"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- BOTÓN FOTO DE PERFIL -->
+    <Button
+        android:id="@+id/btnCamara"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Foto de Perfil"
+        android:padding="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#0F3460"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <!-- BOTÓN PRINCIPAL -->
+    <Button
+        android:id="@+id/btnNuevaRutina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+ Nueva Rutina"
+        android:padding="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#E94560"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <!-- BOTÓN GPS -->
+    <Button
+        android:id="@+id/btnMapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mi Ubicación"
+        android:padding="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#0F3460"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+</LinearLayout>
